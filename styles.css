@@ -1,0 +1,459 @@
+body {
+    background-color: hsl(0, 0%, 100%);
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Título principal */
+
+h1 {
+    background-color: #8ed8f8;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+    font-size: 40px;
+}
+
+/* Párrafos generales */
+
+p {
+    color: #D4AF37;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+/* Menú de navegación */
+
+nav {
+    background-color: #8ed8f8;
+    padding: 15px;
+    text-align: center;
+}
+
+nav button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav button:hover {
+    background-color: white;
+    color: #D4AF37;
+}
+
+/* Productos */
+
+.productos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.productos h2 {
+    color: #D4AF37;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.producto {
+    width: 230px;
+    background-color: white;
+    border: 2px solid #8ed8f8;
+    border-radius: 15px;
+    padding: 15px;
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    border-color: #D4AF37;
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.4s ease,
+                filter 0.4s ease;
+}
+
+.producto:hover img {
+    transform: scale(1.06);
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.15));
+}
+
+.producto h3 {
+    color: #333333;
+    font-size: 20px;
+    margin: 15px 0 5px;
+}
+
+.producto p {
+    color: #D4AF37;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+/* Botones */
+
+button {
+    background-color: #8ed8f8;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(80, 160, 190, 0.20);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #D4AF37;
+    color: white;
+    box-shadow: 0 5px 12px rgba(180, 145, 30, 0.30);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Secciones */
+
+.seccion {
+    background-color: #eaf8fd;
+}
+
+/* Inicio */
+
+#inicio {
+    background-color: #eaf8fd;
+    padding: 40px 20px;
+}
+
+.inicio-imagen {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.inicio-imagen img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.inicio-texto {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    width: 40%;
+    text-align: center;
+}
+
+#inicio .inicio-texto h2 {
+    background-color: transparent;
+    color: #D4AF37;
+    font-size: 38px;
+    margin: 0 0 15px;
+    padding: 0;
+    max-width: none;
+    border-radius: 0;
+}
+
+#inicio .inicio-texto p {
+    background-color: transparent;
+    color: #555555;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    border-radius: 0;
+}
+
+/* Nosotros */
+
+
+.nosotros {
+    background-color: #eaf8fd;
+    padding: 70px 20px;
+}
+
+.nosotros h2 {
+    background-color: white;
+    color: #D4AF37;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 40px 15px;
+    border-radius: 20px 20px 0 0;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.nosotros p {
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px 40px 30px;
+    border-radius: 0 0 20px 20px;
+    color: #555555;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Contacto */
+
+
+.contacto {
+    background-color: #eaf8fd;
+    padding: 50px 20px;
+}
+
+.contacto h2 {
+    background-color: white;
+    color: #D4AF37;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px 30px 10px;
+    border-radius: 20px 20px 0 0;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contacto p {
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px 30px;
+    color: #444444;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.contacto p:last-child {
+    padding-bottom: 25px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.contacto p:last-child {
+    padding-bottom: 30px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+
+.contacto p:last-child {
+    padding-bottom: 30px;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Carrito */
+
+.carrito {
+    background-color: white;
+    color: #D4AF37;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 20px auto;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carrito:hover {
+    background-color: #D4AF37;
+    color: white;
+}
+
+.lista-carrito {
+    display: none;
+    background-color: white;
+    max-width: 500px;
+    margin: 15px auto 30px;
+    padding: 20px 30px;
+    border: 1px solid #d8f1fb;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease;
+}
+
+.lista-carrito:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+.lista-carrito h3 {
+    color: #D4AF37;
+    margin-top: 0;
+}
+
+.lista-carrito p {
+    color: #555555;
+    margin: 8px 0;
+}
+
+/* Botones del carrito */
+
+.lista-carrito button {
+    border: none;
+    border-radius: 8px;
+    padding: 5px 9px;
+    margin: 0 3px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #eaf8fd;
+    color: #D4AF37;
+    font-weight: bold;
+}
+
+.lista-carrito button:hover {
+    background-color: #D4AF37;
+    color: white;
+}
+
+/* Botón Vaciar carrito */
+
+.lista-carrito button[onclick="vaciarCarrito()"] {
+    background-color: #D4AF37;
+    color: white;
+    padding: 10px 18px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+.lista-carrito button[onclick="vaciarCarrito()"]:hover {
+    background-color: #b8941f;
+}
+
+/* Mensaje al agregar producto */
+
+#mensaje-carrito {
+    background-color: #eaf8fd;
+    color: #D4AF37;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 10px auto 20px;
+}
+
+/* Formulario de compra */
+
+#formulario-compra {
+    display: none;
+    background-color: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px 30px;
+    border: 1px solid #d8f1fb;
+    border-radius: 20px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+#formulario-compra h3 {
+    color: #D4AF37;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#formulario-compra input,
+#formulario-compra select {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #8ed8f8;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+#formulario-compra input:focus,
+#formulario-compra select:focus {
+    border-color: #D4AF37;
+}
+
+#formulario-compra button {
+    margin-top: 15px;
+    background-color: #8ed8f8;
+    color: white;
+}
+
+#formulario-compra button:hover {
+    background-color: #D4AF37;
+}
+
+/* Mensaje de pedido realizado */
+
+#mensaje-pedido {
+    display: none;
+    background-color: white;
+    color: #D4AF37;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 18px 25px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#datos-transferencia {
+    display: none;
+    background-color: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#datos-transferencia h3 {
+    color: #D4AF37;
+}
+
+#datos-transferencia p {
+    color: #555555;
+    font-size: 16px;
+    margin: 10px;
+}

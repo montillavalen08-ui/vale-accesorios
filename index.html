@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vale Accesorios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Vale Accesorios</h1>
+
+    <p>Accesorios que hacen brillar tu estilo</p>
+
+    <nav>
+        <button onclick="mostrarSeccion('inicio')">
+            Inicio
+        </button>
+
+        <button onclick="mostrarSeccion('productos')">
+            Productos
+        </button>
+
+        <button onclick="mostrarSeccion('nosotros')">
+            Nosotros
+        </button>
+        
+        <button onclick="mostrarSeccion('contacto')">
+            Contacto
+        </button>
+    </nav>
+
+    <section class="seccion" id="inicio">
+    <div class="inicio-imagen">
+        <img src="img/portada.png" alt="Vale Accesorios">
+
+        <div class="inicio-texto">
+            <h2>Vale Accesorios</h2>
+            <p>Accesorios que hacen brillar tu estilo.</p>
+        </div>
+    </div>
+</section>
+
+    <section class="seccion productos" id="productos">
+        <div class="carrito" onclick="mostrarCarrito()">
+            🛒 Carrito: <span id="contador-carrito">0</span>
+        </div>
+        
+        <div id="mensaje-carrito"></div>
+
+        <div id="lista-carrito" class="lista-carrito"></div>
+        
+        <div id="mensaje-pedido">
+    💙 ¡Pedido realizado con éxito!
+</div>
+
+<div id="datos-transferencia">
+    <h3>Datos para realizar la transferencia</h3>
+    <p><strong>Banco:</strong> Bancolombia</p>
+    <p><strong>Tipo de cuenta:</strong> Cuenta de ahorros</p>
+    <p><strong>Número de cuenta:</strong> 00000000000</p>
+    <p><strong>Nombre:</strong> Vale Accesorios</p>
+    <p>📸 Después de realizar el pago, envíanos el comprobante para 
+        enviar el pedido.</p>
+</div>
+
+<button class="btn-finalizar" onclick="mostrarFormulario()">
+    Finalizar compra
+</button>
+</div>
+
+<div id="formulario-compra" style="display: none;">
+
+    <h3>Datos para tu pedido</h3>
+
+    <input type="text" id="nombre" placeholder="Nombre completo">
+
+    <input type="text" id="telefono" placeholder="Número de teléfono">
+
+    <input type="text" id="direccion" placeholder="Dirección">
+
+    <input type="text" id="ciudad" placeholder="Ciudad">
+
+    <input type="email" id="correo" placeholder="Correo electrónico">
+
+    <select id="pago">
+        <option value="">Selecciona un método de pago</option>
+        <option value="Contraentrega">Pago contraentrega</option>
+        <option value="Transferencia">Transferencia bancaria</option>
+    </select>
+
+    <button onclick="confirmarPedido()">Confirmar pedido</button>
+
+</div>
+
+
+        <h2>Nuestros productos</h2>
+        <div class="contenedor-productos">
+
+            <div class="producto">
+                <img src="img/ganchos_dorados.png"
+                     alt="Gancho Dorado">
+                <h3>Gancho Dorado</h3>
+                <p>$8.000</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/ganchos_colores.png"
+                     alt="Gancho Colores">
+                <h3>Gancho Colores</h3>
+                <p>$6.000</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/ganchos_flores.png"
+                     alt="Ganchos Flores">
+                <h3>Ganchos Flores</h3>
+                <p>$5.000</p>
+                <button class="btn-comprar">Comprar</button>
+
+            </div>
+
+            <div class="producto">
+                <img src="img/anillos_trenzas.png" 
+                    alt="Anillos Trenzas">
+                <h3>Anillos para trenzas</h3>
+                <p>$7.000</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/cepillo_cabello_rizado.png" 
+                    alt="Cepillo para Cabello Rizado">
+                <h3>Cepillo para Cabello Rizado</h3>
+                <p>$12.000</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/cepillo.png"
+                    alt="Cepillo">
+                <h3>Cepillo</h3>
+                <p>$10.000</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/peineta.png"
+                    alt="Peineta">
+                <h3>Peineta</h3>
+                <p>$8.000</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/pinzas_clips.png"
+                    alt="Pinzas Clips">
+                <h3>Pinzas Air Clips</h3>
+                <p>$5.000</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+        <div class="producto">
+                <img src="img/pinzas_metalicas.png"
+                    alt="Pinzas Metalicas">
+                <h3>Pinzas Metalicas</h3>
+                <p>$6.000</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+    </section>
+
+    <section class="seccion nosotros" id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            En Vale Accesorios nos dedicamos a ofrecer accesorios
+            de alta calidad que complementan tu estilo y personalidad.
+            Nuestro compromiso es brindarte productos únicos y
+            elegantes que te hagan sentir especial en cada ocasión.
+        </p>
+    </section>
+
+    <section class="seccion contacto" id="contacto">
+
+        <h2>Contacto</h2>
+
+        <p>
+            ¿Tienes alguna pregunta?
+            ¡Estamos aquí para ayudarte!
+        </p>
+        <p>WhatsApp: 300 991 6377</p>
+        <p>Correo: valeaccesorios@gmail.com</p>
+        <p>Ubicación: Cali, Colombia</p>
+        <p>Instagram: @valeaccesorios</p>
+
+    </section>
+    <script src="javascript/script.js"></script>
+
+</body>
+</html> 
