@@ -5,16 +5,23 @@ body {
     margin: 0;
 }
 
-/* Título principal */
+/* Encabezado con el logo */
 
-h1 {
-    background-color: #8ed8f8;
-    color: white;
+.encabezado {
+    background-color: #eaf8fd;
     text-align: center;
-    padding: 30px;
-    margin: 0;
-    font-size: 40px;
+    padding: 10px 20px;
+    border-bottom: 2px solid #D4AF37;
 }
+
+.encabezado img {
+    width: 190px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 
 /* Párrafos generales */
 
@@ -177,10 +184,14 @@ button:active {
     text-align: center;
 }
 
+
 #inicio .inicio-texto h2 {
     background-color: transparent;
     color: #D4AF37;
-    font-size: 38px;
+    font-family: Georgia, serif;
+    font-size: 44px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.18);
     margin: 0 0 15px;
     padding: 0;
     max-width: none;
@@ -189,17 +200,19 @@ button:active {
 
 #inicio .inicio-texto p {
     background-color: transparent;
-    color: #555555;
-    font-size: 20px;
-    line-height: 1.5;
+    color: #333333;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
     margin: 0;
     padding: 0;
     max-width: none;
     border-radius: 0;
 }
 
-/* Nosotros */
 
+/* Nosotros */
 
 .nosotros {
     background-color: #eaf8fd;
@@ -213,9 +226,14 @@ button:active {
     margin: 0 auto;
     padding: 30px 40px 15px;
     border-radius: 20px 20px 0 0;
+    border-left: 2px solid #8ed8f8;
+    border-right: 2px solid #8ed8f8;
+    border-top: 2px solid #8ed8f8;
     font-size: 30px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-bottom: none;
+    box-shadow: none;
+    margin-bottom: -1px;
 }
 
 .nosotros p {
@@ -224,13 +242,17 @@ button:active {
     margin: 0 auto;
     padding: 15px 40px 30px;
     border-radius: 0 0 20px 20px;
+    border-left: 2px solid #8ed8f8;
+    border-right: 2px solid #8ed8f8;
+    border-bottom: 2px solid #8ed8f8;
     color: #555555;
     font-size: 18px;
     line-height: 1.8;
     text-align: center;
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+    box-shadow: none;
+    border-top: none;
+    margin-top: 0;
 }
-
 
 /* Contacto */
 
@@ -247,9 +269,14 @@ button:active {
     margin: 0 auto;
     padding: 25px 30px 10px;
     border-radius: 20px 20px 0 0;
+    border-left: 2px solid #8ed8f8;
+    border-right: 2px solid #8ed8f8;
+    border-top: 2px solid #8ed8f8;
     font-size: 30px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-bottom: none;
+    box-shadow: none;
+    margin-bottom: -1px;
 }
 
 .contacto p {
@@ -261,24 +288,19 @@ button:active {
     font-size: 18px;
     line-height: 1.3;
     text-align: center;
-}
-
-.contacto p:last-child {
-    padding-bottom: 25px;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+    border-left: 2px solid #8ed8f8;
+    border-right: 2px solid #8ed8f8;
+    border-top: none;
+    margin-top: 0;
 }
 
 .contacto p:last-child {
     padding-bottom: 30px;
     border-radius: 0 0 20px 20px;
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
-}
-
-
-.contacto p:last-child {
-    padding-bottom: 30px;
-    border-radius: 0 0 20px 20px;
+    border-left: 2px solid #8ed8f8;
+    border-right: 2px solid #8ed8f8;
+    border-bottom: 2px solid #8ed8f8;
+    box-shadow: none;
 }
 
 /* Carrito */
